@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+}
+
+body {
+    background-color: rgb(229, 229, 229);
+}
+
+header {
+    background-color: rgb(20, 33, 61);
+    padding: 50px;
+}
+
+header > h1 {
+    color: rgb(252, 163, 17);
+    text-align: center;
+    font-size: 60px;
+}
+
+#calcBody {
+    justify-content: center;
+    background-color: rgb(20, 33, 61);
+    max-width: fit-content;
+    border-radius: 0px 0px 50px 50px;
+    border: 6px solid rgb(252, 163, 17);
+    box-shadow: 10px 10px rgb(0, 0, 0);
+}
+
+#calcDisplay {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: right;
+    padding: 40px 60px;
+    font-size: 80px;
+    min-height: 160px;
+}
+
+#rowOne, #rowTwo, #rowThree, #rowFour, #rowFive {
+    display: flex;
+    justify-content: space-between;
+    color:rgb(229, 229, 229);
+    margin: 5% 15%;
+}
+
+#rowFive {
+    padding-bottom: 5%;
+}
+
+.buttons {
+    display: flex;
+    padding: 10%;
+    font-size: xx-large;
+    font-weight: bold;
+    background-color: rgb(0, 0, 0);
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgb(252, 163, 17);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px rgb(229, 229, 229);
+    
+}
