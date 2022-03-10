@@ -29,7 +29,7 @@ header > h1 {
 #calcBody { 
     margin-top: 100px;
     background-image: linear-gradient(to top, rgb(20,33,61), rgb(229,229,229));
-    width: 500px;
+    width: 450px;
     border-radius: 0px 0px 50px 50px;
     border: 6px solid rgb(252, 163, 17);
     box-shadow: 10px 10px rgb(0, 0, 0);
@@ -45,7 +45,7 @@ header > h1 {
     word-wrap: break-word;
 }
 
-#rowOne, #rowTwo, #rowThree, #rowFour, #rowFive {
+#rowOne, #rowTwo, #rowThree, #rowFour{
     display: flex;
     justify-content: space-between;
     color:rgb(229, 229, 229);
@@ -56,7 +56,7 @@ header > h1 {
     padding-top: 5%;
 }
 
-#rowFive {
+#rowFour {
     padding-bottom: 5%;
 }
 
