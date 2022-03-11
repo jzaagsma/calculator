@@ -44,10 +44,10 @@ const subtract_div = document.getElementById("subtract");
 subtract_div.addEventListener('click', function() {displayEquation("-")});
 
 const multiply_div = document.getElementById("multiply");
-multiply_div.addEventListener('click', function() {displayEquation("x")});
+multiply_div.addEventListener('click', function() {displayEquation("*")});
 
 const divide_div = document.getElementById("divide");
-divide_div.addEventListener('click', function() {displayEquation("÷")});
+divide_div.addEventListener('click', function() {displayEquation("/")});
 
 // the following creates a constant for the AC or clear button, and runs the clearEquation function
 const clearButton_div = document.getElementById("clearButton");
@@ -55,10 +55,17 @@ clearButton_div.addEventListener('click', clearEquation);
 
 function displayEquation(input) {
     calcDisplay.innerHTML = calcDisplay.innerHTML + input;
-    console.log(input);
 };
 
 function clearEquation() {
     calcDisplay.innerHTML = "";
-    console.log("the clear button should be working")
 }
+
+const equals_div = document.getElementById("equals");
+equals_div.addEventListener('click', function() {giveTheAnswer(calcDisplay)});
+
+function giveTheAnswer (input) {
+    let answer = eval(input.innerHTML);
+    console.log(answer);
+    calcDisplay.innerHTML = answer;
+};
